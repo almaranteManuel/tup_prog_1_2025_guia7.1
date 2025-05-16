@@ -13,28 +13,23 @@ namespace Ejercicio_3
             Console.Write("Ingrese un número entero: ");
             int numero = Convert.ToInt32(Console.ReadLine());
 
-            // parte numérica (AAA)
             int parteNumerica = numero % 1000;
             string parteAAA = parteNumerica.ToString("D3");
 
-            // parte alfabética (BBB)
             int parteLetras = numero / 1000;
 
-            // Obtención de cada letra de forma secuencial
             int valor1 = parteLetras / (26 * 26);
             int resto1 = parteLetras % (26 * 26);
 
             int valor2 = resto1 / 26;
             int valor3 = resto1 % 26;
 
-            // Conversión a caracteres ASCII
             char letra1 = (char)(65 + valor1);
             char letra2 = (char)(65 + valor2);
             char letra3 = (char)(65 + valor3);
 
             string parteBBB = "" + letra1 + letra2 + letra3;
 
-            // Resultado final
             Console.WriteLine(parteBBB + parteAAA);
 
             Console.ReadKey();

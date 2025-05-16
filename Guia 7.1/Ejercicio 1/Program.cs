@@ -40,6 +40,8 @@ namespace Ejercicio_1
             Console.WriteLine("La niña 2 recibirá: " + m2);
             Console.WriteLine("La niña 3 recibirá: " + m3);
             Console.WriteLine("La niña 4 recibirá: " + m4);
+
+            Console.ReadKey();
         }
     }
 }
